@@ -1,0 +1,11 @@
+TOP JS checklist:
+- Part 2:
+8 data types (whhich is not primitive?)
+Relationship between null and undefined?
+Term for embedding variables/expressions in a string and the quote that lets you do that
+Difference between slice/substring/substr string methods
+Three logical operators
+Comparison operators
+Truthy and falsy values
+Syntax for if/else and switch
+Syntax for ternary operator
