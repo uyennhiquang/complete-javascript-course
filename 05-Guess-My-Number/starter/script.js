@@ -16,7 +16,7 @@ let highscore = Number(document.querySelector('.highscore').textContent);
 // Check if guess is correct
 document.querySelector('.check').addEventListener('click', function() {
     const guess = Number(document.querySelector('.guess').value);
-    console.log(typeof guess);
+    console.log(guess);
 
     if (!guess)
     {        
@@ -41,17 +41,22 @@ document.querySelector('.check').addEventListener('click', function() {
             document.querySelector('.highscore').textContent = highscore;
         }
     }
+
+    // Wrong guess
     else
     {
         // Decrease score for wrong guess; continue to subtract when score is larger than 0
         if (score > 0)
         {
             document.querySelector('.score').textContent = --score;
+            
             // Tell user they have lost the game
             if (score === 0)
             {
                 document.querySelector('.message').textContent = "You lost the game!";
             }
+            
+            // Tell user whether their guess is too high/low
             else
             {
                 if (guess < secretNumber)
